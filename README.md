@@ -14,4 +14,4 @@ In the Roman system of number, unlike the Arabic one, multiplication not is used
 
 ![](https://render.githubusercontent.com/render/math?math=100+90+4=194)
 
-__To see if you have understood this idea see if you can complete the function called `romanNumeral` in the panel on the left__.  This function takes as input an integer `N` as that is less than 399.  It should return the roman numeral representation for that number.  To get you started I have written code to work out the parts of the numeral that will include the characters C, L and X.  __You will need to extend the code to generate the parts to generate any Vs and Is that are required.__
+__To see if you have understood this idea see if you can complete the function called `romanNumeral` in `main.py`__.  This function takes as input an integer `N` as that is less than 399.  It should return the roman numeral representation for that number.  To get you started I have written code to work out the parts of the numeral that will include the characters C, L and X.  __You will need to extend the code to generate the parts to generate any Vs and Is that are required.__
