@@ -1,3 +1,5 @@
+import numpy as np
+
 def romanNumeral( N ) :
    # mynumeral is a string variable that will eventually hold the roman numeral
   mynumeral = ""
@@ -33,7 +35,17 @@ def romanNumeral( N ) :
   else :
     for i in range(ntens) : mynumeral = mynumeral + "X"
   # You need to write code here to deal with including any Vs, IVs and Is.  
-    
+  if rem==9 : 
+     mynumeral = mynumeral + "IX"
+     rem = rem - 9
+  elif rem>=5 : 
+     mynumeral = mynumeral + "V"
+     rem = rem - 5 
+
+  if rem==4 : 
+     mynumeral = mynumeral + "IV"
+  else :
+     for i in range(rem) : mynumeral = mynumeral + "I"  
   return mynumeral
   
 # Here is some code to test your function
