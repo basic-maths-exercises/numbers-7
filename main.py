@@ -1,3 +1,5 @@
+import numpy as np
+
 def romanNumeral( N ) :
    # mynumeral is a string variable that will eventually hold the roman numeral
   mynumeral = ""

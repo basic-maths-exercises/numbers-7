@@ -6,7 +6,7 @@ except:
     import sys
 
     subprocess.check_call([sys.executable, "-m", "pip", "install", "AssCheck"])
-    from AssCheck import funcchecks as fc:w
+    from AssCheck import funcchecks as fc
 
 import unittest
 from main import *
@@ -15,7 +15,6 @@ class UnitTests(unittest.TestCase) :
     def test_function(self) : 
         inputs, outputs, num = [], [], ""
         for i in range(1,400) :
-            inputs.append((i,))
             if (i+10)%100==0 : num = num.replace("LXXX","IC").replace("IX","")
             elif i%100==0 : num = num.replace("IC","C").replace("IX","")
             elif (i+10)%50==0 : num = num.replace("XXX","IL").replace("IX","")
